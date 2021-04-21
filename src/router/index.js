@@ -56,7 +56,7 @@ export const constantRoutes = [
         path: 'supermap',
         name: 'Supermap',
         component: () => import('@/views/supermap/index'),
-        meta: { title: 'SuperMap地图', icon: 'm22' }
+        meta: { title: '摄像头', icon: 'm22' }
       },
       {
         path: 'gridMap',
@@ -87,45 +87,45 @@ export const constantRoutes = [
       }
     ]
   },
-  {
-    path: '/articles',
-    component: Layout,
-    redirect: '/articles/index',
-    name: 'MyArtic',
-    meta: { title: '文章管理', icon: 'paper' },
-    children: [
-      {
-        path: '/articles/index',
-        name: 'index',
-        component: ListArticle,
-        meta: { title: '文章列表', icon: 'arcticTab' }
-      },
-      {
-        path: '/articles/create',
-        name: 'create',
-        component: CreateArticle,
-        meta: { title: '添加文章', icon: 'addArctic' }
-      },
-      {
-        path: '/articles/edit/:id',
-        name: 'edit',
-        component: EditArticle
-      }
-    ]
-  },
+  // {
+  //   path: '/articles',
+  //   component: Layout,
+  //   redirect: '/articles/index',
+  //   name: 'MyArtic',
+  //   meta: { title: '文章管理', icon: 'paper' },
+  //   children: [
+  //     {
+  //       path: '/articles/index',
+  //       name: 'index',
+  //       component: ListArticle,
+  //       meta: { title: '文章列表', icon: 'arcticTab' }
+  //     },
+  //     {
+  //       path: '/articles/create',
+  //       name: 'create',
+  //       component: CreateArticle,
+  //       meta: { title: '添加文章', icon: 'addArctic' }
+  //     },
+  //     {
+  //       path: '/articles/edit/:id',
+  //       name: 'edit',
+  //       component: EditArticle
+  //     }
+  //   ]
+  // },
 
-  {
-    path: '/uploadimg',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/uploadimg/upimg'),
-        name: 'Uploadimg',
-        meta: { title: '图像处理', icon: 'bigscreen', affix: true }
-      }
-    ]
-  },
+  // {
+  //   path: '/uploadimg',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/uploadimg/upimg'),
+  //       name: 'Uploadimg',
+  //       meta: { title: '图像处理', icon: 'bigscreen', affix: true }
+  //     }
+  //   ]
+  // },
 
   {
     path: '/profile',
