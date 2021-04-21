@@ -49,7 +49,6 @@ app.post('/api/articles', async(req, res) => {
 // 文章列表
 app.get('/api/articles', async(req, res) => {
   const articles = await Article.find()
-
   res.send(articles)
 })
 
